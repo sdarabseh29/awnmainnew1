@@ -1,0 +1,12 @@
+jQuery( document ).ready( function( $ ) {
+	"use strict";
+	
+	$("input.elementor-field").each(function() {
+
+			if($( this ).data("my-mask") !== undefined) {
+				var tmask = $( this ).data("my-mask");
+				$( this ).mask( tmask );
+			}
+
+		});
+});
